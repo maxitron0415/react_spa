@@ -1,0 +1,278 @@
+@font-face {
+    font-family: 'mont';
+    src: url(/src/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'play';
+    src: url(/src/fonts/PlayfairDisplay-Regular.ttf);
+}
+
+* {
+    font-family: 'mont';
+}
+
+.brand-logo {
+    font-family: 'play';
+}
+
+.active {
+    color: #EBCB95;
+    border-bottom: 1px solid #EBCB95;
+}
+
+nav {
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer {
+    background: #171717;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    border: 1px solid rgba(235, 204, 149, 0.3);
+    background: #212121;
+    border-radius: 12px 0px;
+}
+
+img {
+    border-radius: 12px 0px;
+}
+
+.card .card-image img {
+    border-radius: 12px 0px;
+}
+
+.card-title {
+    font-family: 'play';
+}
+
+.card-content {
+    text-align: center;
+    color: white;
+}
+
+.card-action .btn {
+    width: 100%;
+}
+
+.btn {
+    color: black;
+    background: #EBCB95;
+    border-radius: 12px 0px;
+}
+
+.btn:hover {
+    background: none;
+    border: 1px solid #EBCB95;
+    color: white;
+}
+
+#search-field {
+    border-bottom: 1px solid rgba(235, 203, 149, 0.3);
+    border-radius: 12px 0px;
+}
+
+.input-field .btn {
+    height: 86%;
+}
+
+.row .col {
+    padding: 0;
+}
+
+.card-image {
+    width: 100%;
+}
+
+iframe {
+    width: 600px;
+    height: 350px;
+}
+
+.preloader-box {
+    text-align: center;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(0deg, #ebcc9544 33%, #EBCB95 100%);
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+.loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #212121;
+}
+@keyframes rotation {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg)}
+}
+
+footer h5 {
+    font-family: 'play';
+}
+
+.preloader-box {
+    margin-bottom: 40px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+.btn-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.btn-block .btn {
+    width: 20%;
+}
+
+.arrow-btn {
+    margin-bottom: 20px;
+    border: 1px solid rgba(235, 203, 149, 0.5);
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'play';
+}
+
+.row {
+    margin-bottom: 0px;
+}
+
+.first-recipe-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.video-YT-block {
+    text-align: center;
+}
+
+.video-YT-block h4 {
+    font-family: 'play';
+}
+
+.h1-contact{
+    color: white;
+}
+
+.YT-frame-video {
+    margin-bottom: 20px;
+}
+
+.Contacts-block{
+    color: white;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    font-family: "play";
+}
+
+h4{
+    font-family: "play";
+}
+
+tr {
+    border-bottom: 1px solid rgba(235, 204, 149, 0.3);
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+}
+
+.icon-1 {
+    border-radius: 0px;
+    margin-right: 8px;
+}
+
+.info-block p {
+    margin: 4px;
+}
+
+.contact-imag {
+    width: 30%;
+}
+
+.about-block {
+    color: white;
+}
+
+.cooks-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cooks-block img {
+    width: 30%;
+    transition: 0.3s ease-in-out;
+}
+
+.cooks-block img:hover {
+    transform: scale(103%);
+    transition: 0.3s ease-in-out;
+}
+
+.contact-image {
+    transition: 0.3s ease-in-out;
+}
+
+.contact-image:hover {
+    transform: scale(103%);
+    transition: 0.3s ease-in-out;
+}
+
+.input-field .btn::after {
+    background-color: none;
+}
